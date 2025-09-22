@@ -1,0 +1,15 @@
+.title {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  margin: 0 0 var(--space-md) 0;
+  line-height: 1.2;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.title-1 {
+  font-size: clamp(var(--font-size-xl), 5vw, var(--font-size-xxl));
+}
+.title-2 {
+  font-size: clamp(var(--font-size-lg), 4vw, var(--font-size-xl));
+}

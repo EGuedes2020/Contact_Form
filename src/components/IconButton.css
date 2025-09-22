@@ -1,0 +1,21 @@
+.icon-button {
+  color: var(--color-gray);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(----space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+}
+
+.icon-button:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(var(--color-primary-rgb), var(--focus-ring-alpha));
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}

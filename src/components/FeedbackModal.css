@@ -1,0 +1,71 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--space-md);
+}
+
+.modal {
+  background: var(--color-white);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  font-family: var(--font-family);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-md);
+}
+
+.modal-icon {
+  font-size: var(--font-size-xxxl);
+}
+
+.modal-icon.success {
+  color: var(--color-primary);
+}
+
+.spinner {
+  color: var(--color-gray);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end; /* Botões à direita */
+  /* gap: var(--space-lg); */
+  margin-top: var(--space-md);
+}
