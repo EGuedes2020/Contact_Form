@@ -18,7 +18,12 @@ export default function Input({
     // Se for array de erros, mostrar cada um em linha separada
     if (Array.isArray(error)) {
       return (
-        <div id={`${id}-error`} role="alert" className="input-error-message">
+        <div
+          id={`${id}-error`}
+          role="alert"
+          className="input-error-message"
+          novalidate
+        >
           {error.map((err, i) => (
             <span key={i} style={{ display: "block" }}>
               {err}

@@ -36,7 +36,7 @@ export default function ContactForm() {
         if (!value.trim()) fieldErrors.push("O nome é obrigatório.");
         if (value.length > 0 && value.length < 2)
           fieldErrors.push("O nome deve ter pelo menos 2 caracteres.");
-        if (value && !/^[a-zA-ZÀ-ÿ\s'-]*$/.test(value))
+        if (value && !/^[\p{L}\s'-]+$/u.test(value))
           fieldErrors.push(
             "O nome não pode conter números ou caracteres especiais."
           );
